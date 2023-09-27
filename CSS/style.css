@@ -1,0 +1,101 @@
+:root {
+    --bs-body-font-family: 'Labrada', serif;
+    --primary-color: rgb(255, 193, 7);
+    --primary-color-highlight: #233D54;
+    --secondary-color:rgba(176,97,67,1);
+    --bs-body-bg: #fbf0f6;
+}
+
+.header{
+    background-image: url(../Assets/Gampling-background.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.img-logo{
+    width: 100px;
+}
+#hero a.btn {
+    background-color: white;
+    padding: 0.5rem 1rem;
+    transition: all;
+    transition-duration: 500ms;
+    font-weight: bolder;
+    font-size: 18px;
+}
+#hero a.btn:hover{
+    scale: 1.100;
+    background-color: var(--primary-color);
+    color: var(--bs-body-bg);
+    border: var(--bs-body-bg);
+}
+/* SECCION Experiencia*/
+.card{
+    transition-duration: .6s;
+    clip-path: polygon(
+        50% 0,
+        100% 0,
+        100% 50%,
+        100% 100%,
+        50% 100%,
+        0 100%,
+        0 50%,
+        0 0
+    );
+}
+.card-effect:hover .card{
+    clip-path: polygon(
+        50% 0,
+        50% 0,
+        100% 50%,
+        100% 50%,
+        50% 100%,
+        50% 100%,
+        0 50%,
+        0 50%
+    );
+
+}
+
+.card-img-overlay{
+    transition-duration: .6s;
+}
+
+.card-effect:hover .card-img-overlay{
+    transform: scale(0.9);
+}
+
+.card-img-filter{
+    filter: brightness(0.5);
+}
+/* SECCION COMENTARIOS*/
+.comments{
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../Assets/pexels-anastasia-shuraeva-4989094.jpg);
+    background-position: center;
+    background-size: cover;
+
+}
+.comments__img{
+    --tamano: 80px;
+    width: var(--tamano);
+    height: var(--tamano);
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 7px 7px 7px rgba(0 0 0 / 0.5);
+    border: 3px ridge #fbf0f6;
+}
+/*INSPIRATION*/
+.media-object-img{
+    --tamano:65px;
+    width: var(--tamano);
+    height: var(--tamano);
+    margin-right: 15px;
+}
+.carousel-natuur-middle1{
+    top: 35%;
+}
+.carousel-natuur-middle2{
+    top: 35%;
+}
+.carousel-natuur-middle3{
+    top: 35%;
+}
